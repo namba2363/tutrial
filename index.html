@@ -1,20 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1</title>
+<html>
+    <head lang="jp">
+        <meta charset="UTF-8">
+        <title>Tiny Todo List</title>
+        <link rel="stylesheet" href="css/todeolist.css">
 </head>
+
 <body>
-    <h1 class="main"> test namba-san</h1>
+    <header>    
+        <h1> Tiny Todo List</h1>
+    </header>   
+
+    <div class="new-todo">
+        <input type="text" placeholder="What should have been done?" value="今日の予定">
+    </div>
+
+    <div class="todo-list">
+        <ul class="todos">
+            <li class="todo todo-done">
+                <input type="checkbox" checked="checked">
+                <label>予定1</label>
+                <div class="todo-operation">
+                    <button value="edit" class="todo-operation-edit">PEN</button>
+                    <button value="delete" class="todo-operation-delete">×</button>
+                </div>
+            </li>
+            <li class="todo">
+                <input type="checkbox">
+                <label>予定2</label>
+                <div class="todo-operation">
+                    <button value="edit" class="todo-operation-edit">PEN</button>
+                    <button value="delete" class="todo-operation-delete">×</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <address>Copyright &copy; 2016 Your name.</address>
+    </footer>
+
     <button>button1</button>
+
+    <p>ボタンを押して下さい</p>
+    <input id="button1" type="button" value="ボタンを押す" onclick="altertbutton()">
    
-    <input type="text">
+    <script>
+    function altertbutton()   
+     {
+        alert('劉邦\n 知力100\n 武力100');
+      }
+    </script>
 
     <script>
         const sensordata = '2';
         console.log(sensordata);
     </script>
 
+
+
+<script language="JavaScript">
+    function Add(){
+        document.fm.C.value=document.fm.A.value+document.fm.B.value;
+       }
+    </script>
+
+<FORM name="fm">
+    <input size="20" type="text" name="A">+
+    <input size="20" type="text" name="B">
+    <input type="button" value="=" onclick="Add()">
+    <input size="20" type="text" name="C">
+</FORM>
+
+
+
+
+<script language="JavaScript">
+    function Add1(){
+        document.fm1.C.value=eval(document.fm1.A.value)+eval(document.fm1.B.value);
+        }
+    </script>
+
+
+<FORM name="fm1">
+    <input size="20" type="text" name="A">+
+    <input size="20" type="text" name="B">
+    <input type="button" value="=" onclick="Add1()">
+    <input size="20" type="text" name="C">
+</FORM>
+
+//<script language="JavaScript">
+    //   function Add(){
+    //      document.fm.C.value=document.fm.A.value+document.fm.B.value;
+    //    }
+    //</script>
+
+
+
+
+
+
 </body>
 </html>
+
+
+
+
